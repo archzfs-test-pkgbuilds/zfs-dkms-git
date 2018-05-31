@@ -9,7 +9,7 @@ pkgname="zfs-dkms-git"
 pkgdesc="Kernel modules for the Zettabyte File System."
 
 pkgver=2018.05.30.r4573.g928046b74
-pkgrel=1
+pkgrel=2
 makedepends=("git")
 arch=("x86_64")
 url="http://zfsonlinux.org/"
