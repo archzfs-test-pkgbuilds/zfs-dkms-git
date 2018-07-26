@@ -8,15 +8,15 @@
 pkgname="zfs-dkms-git"
 pkgdesc="Kernel modules for the Zettabyte File System."
 
-pkgver=2018.07.24.r4643.g473c976a0
+pkgver=2018.07.25.r4646.g3a549dc7a
 pkgrel=1
 makedepends=("git")
 arch=("x86_64")
 url="http://zfsonlinux.org/"
-source=("git+https://github.com/zfsonlinux/zfs.git#commit=473c976a0c4da84d8b49edaaf3d88a716d8dde2c" "upstream-ac09630-Fix-zpl_mount-deadlock.patch")
+source=("git+https://github.com/zfsonlinux/zfs.git#commit=3a549dc7a1f5e5511b4c8699081f704eeb4381b7" "upstream-ac09630-Fix-zpl_mount-deadlock.patch")
 sha256sums=("SKIP" "1799f6f7b2a60a23b66106c9470414628398f6bfc10da3d0f41c548bba6130e8")
 license=("CDDL")
-depends=("zfs-utils-common-git=2018.07.24.r4643.g473c976a0" "lsb-release")
+depends=("zfs-utils-common-git=2018.07.25.r4646.g3a549dc7a" "lsb-release")
 provides=("zfs")
 groups=("archzfs-dkms-git")
 conflicts=('zfs-dkms' 'spl-dkms-git' 'zfs-archiso-linux' 'zfs-archiso-linux-git' 'zfs-linux-hardened' 'zfs-linux-hardened-git' 'zfs-linux-lts' 'zfs-linux-lts-git' 'zfs-linux' 'zfs-linux-git' 'zfs-linux-vfio' 'zfs-linux-vfio-git' 'zfs-linux-zen' 'zfs-linux-zen-git'  'zfs-archiso-linux-headers' 'zfs-archiso-linux-git-headers' 'zfs-linux-hardened-headers' 'zfs-linux-hardened-git-headers' 'zfs-linux-lts-headers' 'zfs-linux-lts-git-headers' 'zfs-linux-headers' 'zfs-linux-git-headers' 'zfs-linux-vfio-headers' 'zfs-linux-vfio-git-headers' 'zfs-linux-zen-headers' 'zfs-linux-zen-git-headers' )
