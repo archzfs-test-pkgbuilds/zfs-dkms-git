@@ -8,15 +8,21 @@
 pkgname="zfs-dkms-git"
 pkgdesc="Kernel modules for the Zettabyte File System."
 
-pkgver=2018.08.03.r4665.gc8c308362
+pkgver=2018.08.17.r4677.g802715b74
 pkgrel=1
 makedepends=("git")
 arch=("x86_64")
 url="http://zfsonlinux.org/"
-source=("git+https://github.com/zfsonlinux/zfs.git#commit=c8c308362c2f0a43adbe21a44b3443a27d2c7ca9" "upstream-ac09630-Fix-zpl_mount-deadlock.patch")
-sha256sums=("SKIP" "1799f6f7b2a60a23b66106c9470414628398f6bfc10da3d0f41c548bba6130e8")
+source=("git+https://github.com/zfsonlinux/zfs.git#commit=802715b74a23a58d66028699a99eb141c85b7447" 
+        "upstream-ac09630-Fix-zpl_mount-deadlock.patch"
+        "upstream-9f64c1e-Linux-4.18-compat-inode-timespec_timespec64.patch"
+        "upstream-9161ace-Linux-compat-4.18-check_disk_size_change.patch")
+sha256sums=("SKIP" 
+            "1799f6f7b2a60a23b66106c9470414628398f6bfc10da3d0f41c548bba6130e8"
+            "03ed45af40850c3a51a6fd14f36c1adc06501c688a67afb13db4fded6ec9db1d"
+            "afbde4a2507dff989404665dbbdfe18eecf5aba716a6513902affa0e4cb033fe")
 license=("CDDL")
-depends=("zfs-utils-common-git=2018.08.03.r4665.gc8c308362" "lsb-release")
+depends=("zfs-utils-common-git=2018.08.17.r4677.g802715b74" "lsb-release")
 provides=("zfs")
 groups=("archzfs-dkms-git")
 conflicts=('zfs-dkms' 'spl-dkms-git' 'zfs-archiso-linux' 'zfs-archiso-linux-git' 'zfs-linux-hardened' 'zfs-linux-hardened-git' 'zfs-linux-lts' 'zfs-linux-lts-git' 'zfs-linux' 'zfs-linux-git' 'zfs-linux-vfio' 'zfs-linux-vfio-git' 'zfs-linux-zen' 'zfs-linux-zen-git'  'zfs-archiso-linux-headers' 'zfs-archiso-linux-git-headers' 'zfs-linux-hardened-headers' 'zfs-linux-hardened-git-headers' 'zfs-linux-lts-headers' 'zfs-linux-lts-git-headers' 'zfs-linux-headers' 'zfs-linux-git-headers' 'zfs-linux-vfio-headers' 'zfs-linux-vfio-git-headers' 'zfs-linux-zen-headers' 'zfs-linux-zen-git-headers' )
