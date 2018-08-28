@@ -6,6 +6,7 @@
 # http://github.com/archzfs/archzfs
 #
 pkgname="zfs-dkms-git"
+_commit='47ab01a18f55f89be7b3f340b6ec9101bf9e231c'
 pkgdesc="Kernel modules for the Zettabyte File System."
 
 pkgver=2018.08.27.r4698.g47ab01a18
@@ -13,7 +14,7 @@ pkgrel=1
 makedepends=("git")
 arch=("x86_64")
 url="http://zfsonlinux.org/"
-source=("git+https://github.com/zfsonlinux/zfs.git#commit=47ab01a18f55f89be7b3f340b6ec9101bf9e231c" 
+source=("git+https://github.com/zfsonlinux/zfs.git#commit=${_commit}" 
         "upstream-ac09630-Fix-zpl_mount-deadlock.patch"
         "upstream-9f64c1e-Linux-4.18-compat-inode-timespec_timespec64.patch"
         "upstream-9161ace-Linux-compat-4.18-check_disk_size_change.patch")
