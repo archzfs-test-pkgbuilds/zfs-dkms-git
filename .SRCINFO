@@ -1,13 +1,13 @@
 pkgbase = zfs-dkms-git
 	pkgdesc = Kernel modules for the Zettabyte File System.
-	pkgver = 2018.09.07.r4720.gb8a90418f
+	pkgver = 2018.09.13.r4723.g5140a58f3
 	pkgrel = 1
 	url = http://zfsonlinux.org/
 	arch = x86_64
 	groups = archzfs-dkms-git
 	license = CDDL
 	makedepends = git
-	depends = zfs-utils-common-git=2018.09.07.r4720.gb8a90418f
+	depends = zfs-utils-common-git=2018.09.13.r4723.g5140a58f3
 	depends = lsb-release
 	depends = dkms
 	provides = zfs
@@ -38,7 +38,7 @@ pkgbase = zfs-dkms-git
 	conflicts = zfs-linux-zen-headers
 	conflicts = zfs-linux-zen-git-headers
 	replaces = spl-dkms-git
-	source = git+https://github.com/zfsonlinux/zfs.git#commit=b8a90418f3a9c23b89c5d2c729a4dd0fea644508
+	source = git+https://github.com/zfsonlinux/zfs.git#commit=5140a58f3b2a25ce24ff9ae2b01277cd6c64f5ad
 	sha256sums = SKIP
 
 pkgname = zfs-dkms-git
